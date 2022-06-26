@@ -111,7 +111,7 @@
                 <div class="card__inner">
                     <div class="card__media">
                         <div class="media">
-                            <img src="{{ product.featured_media | image_url }}" alt="{{ product.featured_media.alt | escape }}" class="card-image" loading="lazy" height="600" width="600">
+                            <img src="{{ product.featured_media | image_url }}" alt="{{ product.featured_media.alt | escape }}" class="card-image" loading="lazy" height="400" width="400">
                         </div>
                         <div class="card__content">
                             <div class="card__information">
@@ -126,7 +126,7 @@
                                 {%- if product.available == false -%}
                                     <span id="{{ product.id }}-badge" class="badge">Sold Out</span>
                                 {%- elsif product.compare_at_price > product.price and product.available -%}
-                                    <span id="{{ product.id }}-badge" class="badge">On Sale</span>
+                                    <span id="{{ product.id }}-badge" class="badge">On Sale <br><strike> {{ product.compare_at_price | money }}</strike></span>
                                 {%- endif -%}
                             </div>
                         </div>
