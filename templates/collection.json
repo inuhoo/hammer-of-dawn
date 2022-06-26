@@ -4,7 +4,11 @@
       "type": "main-collection-banner"
     },
     "product-grid": {
-      "type": "main-collection-product-grid"
+      "type": "main-collection-product-grid",
+      "settings": {
+        "enable_filtering": true,
+        "enable_sorting": true
+      }
     }
   },
   "order": [

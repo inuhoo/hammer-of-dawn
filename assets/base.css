@@ -1,1 +1,81 @@
 /* boilerplate css goes here  */
+.product-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.product-grid li {
+    list-style-type: none;
+    border: 1px solid grey;
+    margin: 1%;
+    width: 20%
+}
+
+.card__content {
+    padding: 10px;
+}
+
+.card__heading a {
+    color: grey;
+    text-decoration: none;
+}
+.card__media {
+    overflow: hidden;
+}
+
+
+.filters-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .filter-group-display {
+    position: absolute;
+    background: rgba(255,255,255,0.95);
+    z-index: 2000;
+    margin-left: 15px;
+    padding: 20px;
+    border: 1px solid darkgray;
+  }
+  
+  .filter-group:first-child {
+    border: 1px solid darkgray;
+  }
+  
+  .filter-group {
+    display: inline-flex;
+    border: 1px darkgray;
+    border-style:solid solid solid none;
+    padding: 10px 25px 10px 15px;
+  }
+  
+  .active-filters {
+    padding: 10px 0 0px 16px;
+  }
+  .active-filters__clear,
+  .active-filters__remove-filter  {
+    color: grey;
+    text-decoration:none;
+  }
+  .active-filters__clear:hover,
+  .active-filters__remove-filter:hover {
+    color: red;
+  }
+
+  summary {
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+  }
+  
+  summary .icon-caret {
+    position: absolute;
+    height: 0.3rem;
+    right: -15px;
+    top: calc(50% - 0.2rem);
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
